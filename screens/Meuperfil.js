@@ -6,7 +6,7 @@ export default function Meuperfil() {
     return(
         <View style={styles.container}>
             <Text style={styles.titulo}>Seja bem vindo!!</Text>
-            <TouchableOpacity style={styles.botao} onPress={() => navigation.navigate("Pedido")} >
+            <TouchableOpacity style={styles.botao} onPress={() => navigation.navigate("Meuperfil")} >
                 <Text style={styles.botaoText}>Meu Perfil</Text>
             </TouchableOpacity> 
         </View>

@@ -1,18 +1,18 @@
 import { Button, StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import styles from '../styles';
-import MapView from "react-native-maps"
+import MapView from 'react-native-maps';
+import { Marker } from 'react-native-maps';
+import { useState } from 'react';
 
 export default function Endereco() {
-
-}
-
     const [local,setLocal]=useState ({
         latitude: -31.3291509,
             longitude: -54.10779
     })
+
     return(
-        <View style={styles.container}>
-        <Text>Nosso app de Mapas</Text>
+      <View style={styles.container}>
+        <Text>Nosso Endereço</Text>
         <MapView
         style= {styles.mapa}
         initialRegion={{
@@ -46,16 +46,5 @@ export default function Endereco() {
         />
         </MapView>
       </View>
-    );
-  const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#fff',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-    mapa: {
-      width: "90%",
-      height: "60%"
-    }
-  });
+    
+  )};
