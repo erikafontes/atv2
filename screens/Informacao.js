@@ -1,14 +1,13 @@
 import { Button, StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import styles from '../styles';
 
-export default function Informacoes() {
+export default function Informacao() {
 
     return(
         <View style={styles.container}>
-            <Text style={styles.titulo}>Seja bem vindo!!</Text>
-            <TouchableOpacity style={styles.botao} onPress={() => navigation.navigate("Pedido")} >
-                <Text style={styles.botaoText}>Informações Extras</Text>
-            </TouchableOpacity> 
+            {/* <Text style={styles.titulo}>Seja bem vindo!!</Text> */}
+          <Text style={styles.titulo}>Informações Extras</Text>
+          <Text style={styles.subt}>Todas as peças são feitas à mão, com lã anti-alérgica para proteger a criança. </Text>
         </View>
     )
 }

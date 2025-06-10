@@ -1,5 +1,4 @@
 import {Text, View } from 'react-native';
-
 import styles from './styles';
 import { createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
@@ -33,18 +32,18 @@ export default function App() {
       <Tab.Screen name = "Endereço"  component={Endereco}
        options={{tabBarIcon: () => <Icon name = "female"/>,
         tabBarBadge: 2, //npotificacao
-        tabBarBadgeStyle: {backgroundColor: "#FF69B4", color: "white"}
+        tabBarBadgeStyle: {backgroundColor: "#FF69B4", color: "black"}
        }}
        />
        <Tab.Screen name = "Informação"  component={Informacao}
        options={{tabBarIcon: () => <Icon name = "female"/>,
         tabBarBadge: 2, //npotificacao
-        tabBarBadgeStyle: {backgroundColor: "#FF69B4", color: "white"}
+        tabBarBadgeStyle: {backgroundColor: "#FF69B4", color: "black"}
        }}/>
        <Tab.Screen name = "Meu Perfil"  component={Meuperfil}
        options={{tabBarIcon: () => <Icon name = "female"/>,
         tabBarBadge: 2, //npotificacao
-        tabBarBadgeStyle: {backgroundColor: "#FF69B4", color: "white"}
+        tabBarBadgeStyle: {backgroundColor: "#FF69B4", color: "black"}
        }}/>
     </Tab.Navigator>
   </NavigationContainer>

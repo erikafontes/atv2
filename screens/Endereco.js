@@ -12,7 +12,7 @@ export default function Endereco() {
 
     return(
       <View style={styles.container}>
-        <Text>Nosso Endereço</Text>
+        {/* <Text style= {styles.titulo}>Nosso Endereço</Text> */}
         <MapView
         style= {styles.mapa}
         initialRegion={{

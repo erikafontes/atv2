@@ -3,48 +3,54 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#c5e1a5',
+      backgroundColor: 'pink',
       alignItems: 'center',
       justifyContent: 'center',
     },
     titulo: {
       fontSize: 20,
       fontWeight: 600,
-      marginBottom: 20
+      marginTop: 5
     },
+    subt: {
+      padding: 30,
+      fontSize: 15,
+      fontWeight: 400,
+      marginBottom: 10,
+      alignItems: "center"
+    },
+    //textitem{},
     botao: {
       padding: 20,
-      backgroundColor: "#689f38",
+      backgroundColor: "#b9e4ed",
       borderRadius: 15
     },
     botaoText: {
-      color: "#c5e1a5",
+      color: "black",
       fontWeight: 600
     },
         mapa: {
-          width: "90%",
-          height: "60%"
+          width: "70%",
+          height: "50%",
         },
 
-        list:{
-    backgroundColor: '#b9e4ed',
+        list1:{
+    backgroundColor: 'pink',
     marginTop: 20,
     padding: 10,
     borderRadius: 12,
    // flex: 6,
     flexDirection: 'center'
       },
-          
-
 
       listaItem: {
         backgroundColor: '#b9e4ed',
         marginTop: 20,
-       // margin: 50,
         padding: 10,
         borderRadius: 12,
         flex: 1,
-        flexDirection: 'column'
+        flexDirection: 'row',
+        width: 350,
       },
       listaImagem: {
         width: 50,
@@ -62,7 +68,7 @@ const styles = StyleSheet.create({
       modal: {
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#e6e6e6',
+        backgroundColor: '#b9e4ed',
         width: "80%",
         borderRadius: 10,
         padding: 20,
